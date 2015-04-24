@@ -120,7 +120,7 @@ class GemUtils {
             project.javaexec {
                 main 'org.jruby.Main'
                 classpath jRubyClasspath
-                args '-r', 'jruby/commands', '-e', "JRuby::Commands.generate_dir_info( '${destDir.absolutePath}' ) if JRuby::Commands.respond_to?(:gemerate_dir_info)"
+                args '-r', 'jruby/commands', '-e', "JRuby::Commands.generate_dir_info( '${destDir.absolutePath}' ) if JRuby::Commands.respond_to?(:generate_dir_info)"
             }
         }
     }
